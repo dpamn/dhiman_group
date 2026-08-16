@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 import { NauShell } from "@/components/agro/NauShell";
+import { ProductCatalogCta } from "@/components/shared";
 import {
   ButtonLink,
   Container,
@@ -16,6 +17,7 @@ import {
   agroProducts,
   categoryDescriptions,
 } from "@/lib/agro-data";
+import { nauCatalogConfig } from "@/lib/catalog-data";
 
 export const metadata: Metadata = {
   title: "Products | Naman Agro Udhyog",
@@ -133,6 +135,11 @@ export default function NamanProductsPage() {
           </Section>
         );
       })}
+
+      <ProductCatalogCta
+        catalogPath={nauCatalogConfig.catalogPath}
+        contactPath="/naman-agro/contact"
+      />
 
       <section className="bg-brand-navy py-16 text-white sm:py-20">
         <Container className="text-center">

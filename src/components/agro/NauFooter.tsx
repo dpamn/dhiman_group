@@ -11,6 +11,7 @@ const footerNav = [
   { label: "Products", href: "/naman-agro/products" },
   { label: "Infrastructure", href: "/naman-agro#infrastructure" },
   { label: "Quality", href: "/naman-agro#quality" },
+  { label: "Catalog", href: "/naman-agro/catalog" },
   { label: "Gallery", href: "/naman-agro/gallery" },
   { label: "Contact", href: "/naman-agro/contact" },
 ];

@@ -13,6 +13,7 @@ import {
 
 import { NauShell } from "@/components/agro/NauShell";
 import { NauGalleryGrid } from "@/components/agro/NauGalleryGrid";
+import { CatalogHomeSection } from "@/components/shared";
 import {
   ButtonLink,
   Container,
@@ -28,6 +29,7 @@ import {
   agroProducts,
   agroStrengths,
 } from "@/lib/agro-data";
+import { nauCatalogConfig } from "@/lib/catalog-data";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -310,6 +312,13 @@ export default function NamanAgroHomePage() {
           </div>
         </Container>
       </Section>
+
+      {/* Catalog */}
+      <CatalogHomeSection
+        config={nauCatalogConfig}
+        title="Explore Our Agricultural Catalog"
+        description="Discover our complete range of agricultural machinery and implements."
+      />
 
       {/* Infrastructure */}
       <Section tone="muted" id="infrastructure">

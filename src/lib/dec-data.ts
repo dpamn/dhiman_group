@@ -33,8 +33,13 @@ export type DecProduct = {
   name: string;
   category: ProductCategory;
   description: string;
+  overview?: string;
   image: string;
+  images?: string[];
   specs?: string[];
+  applications?: string[];
+  catalogId?: string;
+  model?: string;
 };
 
 export const decProducts: DecProduct[] = [
@@ -146,7 +151,41 @@ export const decProducts: DecProduct[] = [
     image: "/images/DEC_images/products/6.jpg",
     specs: ["Hydrotherapy jets", "Integrated heating", "Automated treatment"],
   },
+  {
+    id: "ci-head-stock",
+    name: "CI Head Stock With Hand Wheel",
+    category: "Industrial Components",
+    model: "DH-HS-WH-100",
+    description:
+      "Complete CI head stock system with ergonomic hand wheel design, cast iron construction and precision control mechanism for industrial applications.",
+    overview:
+      "High-grade cast iron head stock with precisely machined flange base, heat-resistant protective coating and secure 4-bolt mounting. Available with hand wheel for manual control or with spindle and piston assemblies.",
+    image: "/images/DEC_images/catalog/dec-ci-headstock-cover.jpg",
+    images: [
+      "/images/DEC_images/catalog/dec-ci-headstock-cover.jpg",
+      "/images/DEC_images/catalog/dec-ci-headstock-specs.jpg",
+    ],
+    specs: [
+      "Cast Iron Construction",
+      "Material: SS 304 / CI",
+      "ID: 150mm",
+      "Piston ID: 145mm",
+      "Flange, 4-bolt mount",
+      "ISO 9001 Certified",
+    ],
+    applications: [
+      "Chemical Processing",
+      "Marine Systems",
+      "Hydraulic Press",
+      "Industrial Pumps",
+    ],
+    catalogId: "dec-ci-head-stock-brochure",
+  },
 ];
+
+export function getDecProduct(id: string): DecProduct | undefined {
+  return decProducts.find((product) => product.id === id);
+}
 
 export const decServices = [
   {

@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 
 import { DecShell } from "@/components/engineering/DecShell";
+import { CatalogHomeSection } from "@/components/shared";
 import {
   ButtonLink,
   Container,
@@ -31,6 +32,7 @@ import {
   decServices,
   decStats,
 } from "@/lib/dec-data";
+import { decCatalogConfig } from "@/lib/catalog-data";
 
 export const metadata: Metadata = {
   title: "Dhiman Engineering Company | Water Treatment & Pool Specialists",
@@ -324,6 +326,13 @@ export default function EngineeringHomePage() {
           </div>
         </Container>
       </Section>
+
+      {/* ── Catalog ── */}
+      <CatalogHomeSection
+        config={decCatalogConfig}
+        title="Explore Our Product Catalog"
+        description="Discover our complete range of engineering products and solutions."
+      />
 
       {/* ── Industries ── */}
       <Section tone="dark" id="industries">

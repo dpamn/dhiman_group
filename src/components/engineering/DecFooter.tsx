@@ -11,6 +11,7 @@ const footerNav = [
   { label: "Products", href: "/engineering/products" },
   { label: "Services", href: "/engineering/services" },
   { label: "Projects", href: "/engineering/projects" },
+  { label: "Catalog", href: "/engineering/catalog" },
   { label: "Gallery", href: "/engineering/gallery" },
   { label: "Contact", href: "/engineering/contact" },
 ];
@@ -112,6 +113,7 @@ export function DecFooter() {
       <div className="border-t border-white/15">
         <Container className="flex flex-col gap-2 py-5 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
           <p>&copy; {year} Dhiman Engineering Company. All rights reserved.</p>
+          <p>Made with ❤ by Amandeep Dhiman</p>
           <Link
             href="/"
             className="transition-colors hover:text-slate-200"

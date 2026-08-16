@@ -14,6 +14,7 @@ const decNav = [
   { label: "Products", href: "/engineering/products" },
   { label: "Services", href: "/engineering/services" },
   { label: "Projects", href: "/engineering/projects" },
+  { label: "Catalog", href: "/engineering/catalog" },
   { label: "Gallery", href: "/engineering/gallery" },
 ];
 

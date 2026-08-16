@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 import { DecShell } from "@/components/engineering/DecShell";
+import { ProductCatalogCta } from "@/components/shared";
 import {
   ButtonLink,
   Container,
@@ -12,6 +13,7 @@ import {
   SectionHeading,
 } from "@/components/ui";
 import { decProducts, type ProductCategory } from "@/lib/dec-data";
+import { decCatalogConfig } from "@/lib/catalog-data";
 
 export const metadata: Metadata = {
   title: "Products | Dhiman Engineering Company",
@@ -114,13 +116,21 @@ export default function EngineeringProductsPage() {
                           )}
                           <div className="mt-6 flex gap-3">
                             <ButtonLink
-                              href="/engineering/contact"
+                              href={`/engineering/products/${product.id}`}
                               variant="secondary"
                               size="sm"
                               className="flex-1"
                             >
-                              Enquire
+                              View Details
                               <ArrowRight aria-hidden="true" className="size-3.5" />
+                            </ButtonLink>
+                            <ButtonLink
+                              href="/engineering/contact"
+                              variant="ghost"
+                              size="sm"
+                              className="flex-1"
+                            >
+                              Enquire
                             </ButtonLink>
                           </div>
                         </div>
@@ -135,6 +145,11 @@ export default function EngineeringProductsPage() {
       })}
 
       {/* ── CTA ── */}
+      <ProductCatalogCta
+        catalogPath={decCatalogConfig.catalogPath}
+        contactPath="/engineering/contact"
+      />
+
       <section className="bg-brand-navy py-16 text-white sm:py-20">
         <Container className="text-center">
           <Reveal>
