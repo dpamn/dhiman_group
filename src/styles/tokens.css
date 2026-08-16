@@ -1,0 +1,39 @@
+:root {
+  --ds-color-brand-primary: #0f172a;
+  --ds-color-brand-secondary: #22c55e;
+  --ds-color-brand-accent: #f59e0b;
+  --ds-color-brand-ink: #1e293b;
+  --ds-color-brand-steel: #1f5d75;
+  --ds-color-agro: #166534;
+  --ds-color-surface: #ffffff;
+  --ds-color-surface-muted: #f4f7f6;
+  --ds-color-selection: #bbf7d0;
+  --ds-radius-control: 0.25rem;
+  --ds-radius-card: 0.5rem;
+  --ds-shadow-card: 0 10px 30px rgb(15 23 42 / 0.06);
+  --ds-shadow-float: 0 18px 45px rgb(15 23 42 / 0.12);
+  --ds-ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+  --background: var(--ds-color-surface);
+  --foreground: var(--ds-color-brand-ink);
+}
+
+@theme inline {
+  --color-brand-primary: var(--ds-color-brand-primary);
+  --color-brand-secondary: var(--ds-color-brand-secondary);
+  --color-brand-accent: var(--ds-color-brand-accent);
+  --color-brand-ink: var(--ds-color-brand-ink);
+  --color-brand-steel: var(--ds-color-brand-steel);
+  --color-brand-agro: var(--ds-color-agro);
+  --color-brand-surface: var(--ds-color-surface);
+  --color-brand-mist: var(--ds-color-surface-muted);
+  --color-brand-navy: var(--ds-color-brand-primary);
+  --color-brand-green: var(--ds-color-brand-secondary);
+  --color-brand-amber: var(--ds-color-brand-accent);
+  --font-sans: var(--font-source-sans);
+  --font-display: var(--font-manrope);
+  --radius-control: var(--ds-radius-control);
+  --radius-card: var(--ds-radius-card);
+  --shadow-card: var(--ds-shadow-card);
+  --shadow-float: var(--ds-shadow-float);
+  --ease-out-expo: var(--ds-ease-out-expo);
+}
