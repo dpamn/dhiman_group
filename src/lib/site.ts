@@ -11,10 +11,11 @@ export const siteConfig = {
     "A diversified industrial group committed to quality, innovation, and long-term partnerships across engineering and agricultural industries.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.dhimangroup.com",
   contact: {
-    phone: process.env.NEXT_PUBLIC_CONTACT_PHONE ?? "+919837469849",
+    phone: process.env.NEXT_PUBLIC_CONTACT_PHONE ?? "+919837144746",
     phoneDisplay:
-      process.env.NEXT_PUBLIC_CONTACT_PHONE_DISPLAY ?? "+91 98374 69849",
+      process.env.NEXT_PUBLIC_CONTACT_PHONE_DISPLAY ?? "+91 9837144746",
     phones: [
+      "+91-9837144746",
       "+91-9837469849",
       "+91-7599222973",
       "+91-7251893534",
